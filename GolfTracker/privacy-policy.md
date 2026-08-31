@@ -88,7 +88,7 @@ Du hast jederzeit das Recht auf:
 - **Auskunft** über die zu deiner Person gespeicherten Daten — diese siehst du vollständig in der App
 - **Berichtigung** unrichtiger Daten — über die Bearbeitungsfunktionen der App
 - **Löschung** deiner Daten — über die Reset-Funktionen oder das Deinstallieren der App
-- **Datenübertragbarkeit** — auf Anfrage exportieren wir deine Runden-Daten als JSON
+- **Datenübertragbarkeit** — deine Runden-Daten werden zu keinem Zeitpunkt an uns übermittelt. Sie liegen ausschließlich auf deinem Gerät und, sofern du iCloud-Sync nutzt, in deiner eigenen privaten iCloud-Datenbank. Es existiert damit kein bei uns gespeicherter Datenbestand, den wir herausgeben könnten — du verfügst bereits selbst über deine Daten.
 
 Da GolfTracker keine personenbezogenen Daten an einen zentralen Server sendet, betreffen die meisten dieser Rechte ohnehin nur deine lokale App- und iCloud-Speicherung, die du selbst kontrollierst.
 
