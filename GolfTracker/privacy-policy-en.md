@@ -88,7 +88,7 @@ You have the right at any time to:
 - **Access** the data stored about you — you can see all of it in the app
 - **Rectification** of inaccurate data — via the app's editing functions
 - **Erasure** of your data — via the reset functions or by uninstalling the app
-- **Data portability** — on request, we will export your round data as JSON
+- **Data portability** — your round data is never transmitted to us at any point. It resides solely on your device and, if you use iCloud sync, in your own private iCloud database. There is therefore no dataset held by us that we could hand over — you are already in possession of your data
 
 Since GolfTracker sends no personal data to any central server, most of these rights concern only your local app storage and your iCloud storage, both of which you control yourself.
 
