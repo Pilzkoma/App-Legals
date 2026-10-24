@@ -1,107 +1,99 @@
-# Privacy Policy — GolfTracker
+# Privacy Policy — AllUnderPar
 
-**Last updated:** 31 August 2026
+**Last updated:** October 24, 2026
 
-This privacy policy describes what data the **GolfTracker** app processes, how it is stored, and what rights you have as a user.
+This privacy policy explains which data the app **AllUnderPar – Golf Scorecard** ("the app") processes, where it is stored, and what rights you have.
 
-## Data controller
+## Controller
 
 Lasse Pilz
-Email: pilzkoma@gmail.com
+E-mail: pilzkoma@gmail.com
 
-## 1. What data is processed?
+## 1. What data does the app process?
 
-GolfTracker stores only the data you enter yourself:
+The app processes the data you enter yourself and – only with a paired Apple Watch and your consent – workout data in Apple Health (see 2.5):
 
 - **Player profiles:** name, optional profile photo or emoji avatar, handicap, gender
-- **Round data:** courses played, strokes per hole, putts, fairways, greens in regulation, notes per hole
-- **App settings:** language, units, appearance, Pro Mode, haptics
-- **Optional photo content:** profile photos you take or choose, and exported scorecards (saved only locally to your photo library)
+- **Round data:** courses played, strokes per hole, putts, fairways, greens in regulation, hole notes
+- **App settings:** language, distance unit, appearance, Pro Mode, haptics
+- **Photos:** profile photos you take or pick; exported scorecards are saved only to your own photo library
 
-GolfTracker collects **no** tracking data, gathers **no** advertising or analytics identifiers, and uses **no** third-party SDKs for data analysis.
-
-**GolfTracker does not process location data.** The app never requests access to your location and does not evaluate any positional data.
+The app uses **no tracking**, **no advertising or analytics IDs** and **no third-party SDKs**. It does **not** process location data.
 
 ## 2. Where is your data stored?
 
-### 2.1 Locally on your device
-All data is stored first on your iPhone or iPad in the app's local database (SwiftData). It does not leave your device unless you actively use one of the features below.
+### 2.1 On your device
+All data lives in the app's local database on your iPhone. It only leaves your device through the features below.
 
-### 2.2 On a paired Apple Watch
-If you use the GolfTracker app on a paired Apple Watch, your iPhone sends the current state of an in-progress round to the watch — player names, emoji avatar, strokes, scores, and (in Pro Mode) putts, fairway and greens in regulation. In return, the watch sends strokes you enter there back to the iPhone.
+### 2.2 Paired Apple Watch
+If you use the Watch app, your iPhone sends the live round (player names, emoji avatars, strokes, points and, in Pro Mode, putts, fairway and GIR) to your watch, and the watch sends strokes entered there back. This runs exclusively over Apple's WatchConnectivity between your own devices, without any server.
 
-This exchange runs solely over Apple's on-device WatchConnectivity interface, between your iPhone and your own watch. No server is involved, and the data does not leave your own devices.
+### 2.3 Your private iCloud (CloudKit)
+If you are signed in to iCloud, every finished round (including player names, handicaps and scores) is backed up to your **personal, private iCloud database** and restored on your other devices. Only you can access it; Apple provides the infrastructure, the developer has no access.
 
-### 2.3 In your private iCloud (CloudKit)
-If you are signed in to iCloud and use CloudKit sync, your player data and rounds are synchronised into your **personal, private iCloud database**. This data is accessible only to you. Apple provides the infrastructure; neither the app provider nor other users have access to it.
+### 2.4 Nearby multiplayer (MultipeerConnectivity)
+During a multiplayer round you actively start, the app exchanges directly with nearby iPhones via Bluetooth or local Wi-Fi:
 
-### 2.4 Local multiplayer network (MultipeerConnectivity)
-During an actively started multiplayer round, GolfTracker transmits the following to the other iPhone in your immediate vicinity, via **Bluetooth or the local Wi-Fi network**:
+- your player name (visible as the device display name)
+- stroke and hole updates during the round
+- in tournament mode, the complete scorecards at the end of the round for comparison
 
-- Your chosen player name (visible as the device display name)
-- Stroke and hole updates during the round in progress
-- In tournament mode, additionally the full scorecard of both devices at the end of the round, so the cards can be compared
+This only happens while you are actively connected, peer-to-peer without any server.
 
-Transmission happens **only** while a multiplayer session is active and you have actively connected to a nearby device. No connection to any server takes place; the data is exchanged peer-to-peer and is not stored on any central system.
+### 2.5 Apple Health
+If an Apple Watch is paired and you agree, the app starts a "Golf" workout on your watch when a round begins. This keeps the Watch app active during the round. At the end of the round the workout is saved to Apple Health; if you abandon the round, it is discarded. For this, the watch measures heart rate, active energy and walking distance during the round.
+
+This health data is processed only on your devices and in Apple Health. It is not stored in the app's iCloud data, never sent to the developer or third parties, and never used for advertising. The legal basis is your explicit consent (Art. 9(2)(a) GDPR), which you can withdraw at any time in the Health app under *Profile → Apps → AllUnderPar*. Without consent the app keeps working; the Watch app just won't open automatically.
 
 ## 3. Permissions
 
-GolfTracker requests only the permissions required for the feature in question:
-
-| Permission | Used for |
+| Permission | Purpose |
 |---|---|
-| Camera | Taking a profile photo directly (optional) |
-| Photo library (saving) | Saving an exported scorecard to your library |
-| Local network | Finding a multiplayer connection on the same Wi-Fi network |
-| Bluetooth | Establishing a multiplayer connection without Wi-Fi |
+| Camera | Take a profile photo (optional) |
+| Photo library (add only) | Save the scorecard as an image to your library |
+| Local network | Multiplayer connection on the same Wi-Fi |
+| Bluetooth | Multiplayer connection without Wi-Fi |
+| Apple Health (save workouts, read heart rate/energy/distance) | Record the round as a golf workout on the watch |
 
-**Choosing** an existing photo as a profile picture requires no permission at all: the app uses the iOS system picker and receives only the single image you select — not access to your library.
+Picking a profile photo needs no permission: through the iOS system picker the app only receives the one image you choose. The app never requests location access. You can revoke any permission in iOS Settings.
 
-**GolfTracker does not request location access.**
+## 4. Network requests and recipients
 
-You can revoke any granted permission at any time in the iOS system settings.
+**Course data (GitHub):** When you import or update golf courses, the app downloads a public JSON file from `raw.githubusercontent.com` (GitHub Inc., USA). For technical reasons your **IP address** and a generic device/app identifier (user agent) are transmitted to GitHub. No other data is sent. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in providing course data). The transfer to the USA is based on the EU-U.S. Data Privacy Framework, under which GitHub is certified.
 
-## 4. Data sharing
+**Course requests by e-mail:** If you request a course or a data correction, the app opens your mail app with a pre-filled message. Only when you send it yourself do we receive your e-mail address and message. They are used solely to handle your request and deleted afterwards. Mail is received via Google (Gmail). Legal basis: Art. 6(1)(b) or (f) GDPR.
 
-GolfTracker shares **no** personal data with third parties. The only flows of data off your iPhone are:
+**Apple:** The app is distributed through the App Store. If you have agreed in iOS to share analytics and crash data with developers, Apple provides us with anonymized crash reports and usage statistics. The app itself has no influence on this; Apple's privacy policy applies.
 
-- Transmission to your own paired Apple Watch (see 2.2)
-- Synchronisation into your own iCloud database (see 2.3)
-- Peer-to-peer transmission to another device you actively pair with (see 2.4)
+Beyond this, the app makes no network connections and shares no personal data with third parties.
 
-## 5. Network requests
+## 5. Legal bases
 
-When importing golf courses, and when later updating courses you have already imported, the app downloads a public, static JSON file from GitHub (`raw.githubusercontent.com`). No personal or identifying data is transmitted to GitHub in the process — it is a simple HTTPS GET request without authentication.
-
-Beyond this, GolfTracker makes no network connections.
+- Storing your entries on your device, in your iCloud and on your watch: Art. 6(1)(b) GDPR (providing the app features you use)
+- Multiplayer exchange: Art. 6(1)(b) GDPR, triggered by your active connection
+- Course data download: Art. 6(1)(f) GDPR
+- Health data (Apple Health): explicit consent, Art. 9(2)(a) GDPR
 
 ## 6. Retention and deletion
 
-- **Local data** is kept for as long as you want to keep it. You can delete data selectively via *Settings → Reset statistics* or *Reset everything*.
-- **iCloud data** can be removed from your private iCloud database at any time via *Settings → Reset everything*. Alternatively, you can disable or delete the app's data entirely in the iOS system settings under *Apple ID → iCloud → Apps using iCloud → GolfTracker*.
-- Uninstalling the app removes all locally stored data. iCloud data must be deleted separately if desired.
+- **Local data** is kept until you delete it: single rounds in the history, *Settings → Reset all statistics* or *Reset everything (incl. players & courses)*. Deleting the app removes all local data.
+- **iCloud data** is also removed when you delete a round, *Reset all statistics* or *Reset everything (incl. players & courses)*. You can additionally manage it in iOS Settings under *[Your Name] → iCloud → Apps Using iCloud*.
+- **E-mail requests** are deleted once handled.
 
 ## 7. Your rights
 
-You have the right at any time to:
+You have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), data portability (Art. 20) and to object to processing based on legitimate interests (Art. 21 GDPR). Since your round and player data lives only on your devices and in your own iCloud, you can exercise most of these rights directly in the app. For anything else, an e-mail is enough.
 
-- **Access** the data stored about you — you can see all of it in the app
-- **Rectification** of inaccurate data — via the app's editing functions
-- **Erasure** of your data — via the reset functions or by uninstalling the app
-- **Data portability** — your round data is never transmitted to us at any point. It resides solely on your device and, if you use iCloud sync, in your own private iCloud database. There is therefore no dataset held by us that we could hand over — you are already in possession of your data
+You also have the right to lodge a complaint with a **data protection supervisory authority** (Art. 77 GDPR), for example the one where you live.
 
-Since GolfTracker sends no personal data to any central server, most of these rights concern only your local app storage and your iCloud storage, both of which you control yourself.
+## 8. Handicap notice
 
-## 8. Changes to this policy
+The handicap AllUnderPar calculates is an in-app handicap. It is not an official DGV handicap and does not replace the record your home club keeps for you. For counting rounds, only the handicap index maintained by your club applies.
 
-If the app's features or data flows change, this policy will be updated accordingly. The current version is always available at the link stored in the app, as well as via the app setting *Privacy Policy*.
+## 9. Changes
 
-## 9. A note on the handicap
-
-The handicap GolfTracker calculates is an in-app handicap. It is not an official DGV handicap and does not replace the record your home club keeps for you. For counting rounds, only the handicap index maintained by your club applies.
+If the app's features or data flows change, this policy will be updated. The current version is linked in the app under *Settings → Privacy Policy*.
 
 ## 10. Contact
 
-For questions about data protection, you can reach us at:
-
-**Email:** pilzkoma@gmail.com
+pilzkoma@gmail.com
