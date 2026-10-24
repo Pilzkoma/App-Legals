@@ -32,13 +32,13 @@ If you use the Watch app, your iPhone sends the live round (player names, emoji 
 If you are signed in to iCloud, every finished round (including player names, handicaps and scores) is backed up to your **personal, private iCloud database** and restored on your other devices. Only you can access it; Apple provides the infrastructure, the developer has no access.
 
 ### 2.4 Nearby multiplayer (MultipeerConnectivity)
-During a multiplayer round you actively start, the app exchanges directly with nearby iPhones via Bluetooth or local Wi-Fi:
+During a multiplayer round you actively create or join, the app exchanges directly with up to three nearby iPhones via Bluetooth or local Wi-Fi:
 
-- your player name (visible as the device display name)
-- stroke and hole updates during the round
-- in tournament mode, the complete scorecards at the end of the round for comparison
+- your player profile: name (also visible as the device display name), handicap, gender, and your emoji avatar or a small thumbnail of your profile photo
+- from the host: the round setup (course with tees, game mode, players and teams)
+- during the round: strokes, putts, fairway and green hits per hole; in tournament mode your handed-in card entries
 
-This only happens while you are actively connected, peer-to-peer without any server.
+Every participating iPhone then keeps the round, including the player profiles, like one of its own rounds. Other players can delete this data on their device. The exchange only happens while you are connected, peer-to-peer without any server.
 
 ### 2.5 Apple Health
 If an Apple Watch is paired and you agree, the app starts a "Golf" workout on your watch when a round begins. This keeps the Watch app active during the round. At the end of the round the workout is saved to Apple Health; if you abandon the round, it is discarded. For this, the watch measures heart rate, active energy and walking distance during the round.

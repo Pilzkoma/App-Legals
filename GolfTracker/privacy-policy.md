@@ -32,13 +32,13 @@ Nutzt du die Watch-App, überträgt das iPhone während einer Runde den Spielsta
 Bist du in iCloud angemeldet, wird jede abgeschlossene Runde (inkl. Spielernamen, Handicap und Scores) in deine **persönliche, private iCloud-Datenbank** gesichert und auf deinen anderen Geräten wiederhergestellt. Nur du hast Zugriff; Apple stellt die Infrastruktur bereit, der Anbieter hat keinen Zugriff.
 
 ### 2.4 Mehrspieler in der Nähe (MultipeerConnectivity)
-Bei einer aktiv gestarteten Mehrspieler-Runde tauscht die App per Bluetooth oder lokalem WLAN direkt mit iPhones in deiner Nähe aus:
+Bei einer Mehrspieler-Runde, die du aktiv erstellst oder der du beitrittst, tauscht die App per Bluetooth oder lokalem WLAN direkt mit bis zu drei iPhones in deiner Nähe aus:
 
-- deinen Spielernamen (sichtbar als Geräte-Anzeigename)
-- Schlag- und Loch-Updates während der Runde
-- im Turniermodus am Rundenende die vollständigen Scorecards zum Vergleich
+- dein Spielerprofil: Name (auch als Geräte-Anzeigename sichtbar), Handicap, Geschlecht sowie dein Emoji-Avatar oder ein kleines Vorschaubild deines Profilfotos
+- vom Host: die Rundeneinrichtung (Platz mit Abschlägen, Spielmodus, Spieler und Teams)
+- während der Runde: Schläge, Putts, Fairway- und Grün-Treffer je Loch; im Turniermodus deine abgegebenen Karteneinträge
 
-Das geschieht nur, solange du aktiv verbunden bist, Peer-to-Peer ohne Server.
+Jedes beteiligte iPhone speichert die Runde samt Spielerprofilen anschließend wie eine eigene Runde. Mitspieler können diese Daten dort selbst löschen. Der Austausch geschieht nur, solange ihr verbunden seid, Peer-to-Peer ohne Server.
 
 ### 2.5 Apple Health
 Ist eine Apple Watch gekoppelt und stimmst du zu, startet die App beim Rundenstart auf deiner Watch ein Training „Golf“. Das hält die Watch-App während der Runde aktiv. Am Rundenende wird das Training in Apple Health gespeichert; brichst du die Runde ab, wird es verworfen. Dafür misst die Watch während der Runde Herzfrequenz, aktive Energie und Gehstrecke.
